@@ -1,0 +1,70 @@
+:root {
+    --primaryText: #111827;
+    --secondaryText: #ffffff; 
+}
+
+html {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Inter;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+/* ------------------- Header ------------------- */
+
+header {
+    grid-area: header;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links div {
+    margin: 0 24px;
+    align-self: center;
+}
+
+.nav-links div a {
+    text-decoration: none;
+    color: var(--primaryText);
+}
+
+.nav-store-links {
+    display: flex;
+}
+
+.nav-store-links div {
+    background-color: black;
+    margin: 0 24px;
+    padding: 10px;
+}
+
+.nav-store-links div a {
+    text-decoration: none;
+    color: var(--secondaryText);
+}
+
+/* ------------------- Main ------------------- */
+
+main {
+    grid-area: main;
+}
+
+/* ------------------- Footer ------------------- */
+
+footer {
+    grid-area: footer;
+}

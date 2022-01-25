@@ -34,6 +34,10 @@ header {
     grid-area: header;
 }
 
+header > * {
+    position: relative;
+}
+
 .nav {
     display: flex;
     justify-content: space-around;
@@ -81,8 +85,8 @@ header {
     justify-content: space-around;
     align-items: center;
     border-radius: 8px;
-    z-index: 999;
-    opacity: 1;
+    z-index: 5;
+    position: relative;
 }
 
 .nav-burger {
@@ -599,7 +603,7 @@ footer {
     top: 0px;
     background: rgba(242, 247, 255, 0.7);
     backdrop-filter: blur(100px);
-    opacity: 0.2;
+    opacity: 0.3;
 }
 
 .tc {
@@ -609,7 +613,7 @@ footer {
     left: 829px;
     top: 464px;
     background: #1DB5BE;
-    opacity: 0.2;
+    opacity: 0.3;
     -webkit-filter: blur(100px);
     -moz-filter: blur(100px);
     -o-filter: blur(100px);
@@ -624,13 +628,13 @@ footer {
     left: 1087px;
     top: -37px;
     background: #7C3AED;
-    opacity: 0.2;
+    opacity: 0.3;
     -webkit-filter: blur(100px);
     -moz-filter: blur(100px);
     -o-filter: blur(100px);
     -ms-filter: blur(100px);
     filter: blur(100px);
-    z-index: 2;
+    z-index: 1;
 }
 
 /** Responsive (Tablet) **/
@@ -644,6 +648,8 @@ footer {
     .nav-burger {
         display: inline-block;
         margin-left: 2rem;
+        position: relative;
+        z-index: 5;
     }
 
     .header {
@@ -788,7 +794,7 @@ footer {
         bottom: 13.16%;
         background: rgba(242, 247, 255, 0.7);
         backdrop-filter: blur(100px);
-        opacity: 0.2;
+        opacity: 0.3;
     }
 
     .tc-t {
@@ -798,7 +804,7 @@ footer {
         top: 53.55%;
         bottom: 27.09%;
         background: #1DB5BE;
-        opacity: 0.2;
+        opacity: 0.3;
         -webkit-filter: blur(100px);
         -moz-filter: blur(100px);
         -o-filter: blur(100px);
@@ -813,7 +819,7 @@ footer {
         top: -4.27%;
         bottom: 57.36%;
         background: #7C3AED;
-        opacity: 0.2;
+        opacity: 0.3;
         -webkit-filter: blur(100px);
         -moz-filter: blur(100px);
         -o-filter: blur(100px);

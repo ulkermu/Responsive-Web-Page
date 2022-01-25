@@ -83,6 +83,11 @@ header {
     border-radius: 8px;
 }
 
+.nav-burger {
+    display: none;
+    align-self: center;
+}
+
 .small-link {
     font-size: .6rem;
 }
@@ -350,14 +355,14 @@ main {
     justify-items: center;
 }
 
-.links-items {
+.links-item {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.links-item {
-    width: 170px;
+.links-item div {
+    margin: 0 60px;
 }
 
 .features {
@@ -414,15 +419,6 @@ main {
     left: 112px;
     top: 64px;
     opacity: 0.3;
-}
-
-.quote-svg {
-    opacity: .3;
-    z-index: 1;
-}
-
-.stories-header {
-    width: 200px;
 }
 
 .stories-headline {
@@ -493,7 +489,7 @@ main {
 .stories-quote-words article {
     padding-left: 1rem;
 }
-    
+
 .author {
     font-weight: bold;
     padding-top: 20px;
@@ -553,5 +549,86 @@ footer {
     border-radius: 8px;
 }
 
-/** Responsive **/ 
+/** Responsive **/
 
+@media (max-width:768px) {
+
+    .nav-link {
+        display: none;
+    }
+
+    .nav-burger {
+        display: inline-block;
+        margin-left: 2rem;
+    }
+
+    .header {
+        padding: 4rem 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-news {
+        padding: 3rem 0;
+        max-width: 648px;
+    }
+
+    .links-item div {
+        margin: 10px 40px;
+    }
+
+    .features-main {
+        grid-template-columns: repeat(2, 352px);
+    }
+
+    .stories {
+        padding-bottom: 80px;
+    }
+
+    .stories-header {
+        padding-bottom: 40px;
+    }
+
+    .stories-headline {
+        margin: 0 auto;
+        width: 688px;
+    }
+
+    .stories-headline h2 {
+        font-size: 2.5rem;
+    }
+
+    .stories-quote {
+        width: 142px;
+        height: 116px;
+        left: 20px;
+        top: 56px;
+    }
+
+    .stories-quotes {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .stories-left-side {
+        margin: 0;
+    }
+
+    .stories-right-side {
+        margin: 0;
+    }
+
+    .stories-quote-1 {
+        width: 688px;
+        margin-bottom: 24px;
+    }
+
+    .stories-quote-2 {
+        width: 688px;
+        margin-bottom: 24px;
+    }
+
+    .stories-quote-3 {
+        width: 688px;
+    }
+}

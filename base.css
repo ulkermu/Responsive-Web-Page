@@ -194,10 +194,10 @@ header {
     overflow: hidden;
 }
 
-video {
-    height: 700px;
-    width: 350px;
-    margin-top: -30px;
+.screen img {
+    height: 680px;
+    width: 310px;
+    margin-top: 0px;
     margin-left: -10px;
 }
 
@@ -361,7 +361,7 @@ main {
     flex-wrap: wrap;
 }
 
-.links-item div {
+.links-item a {
     margin: 0 60px;
 }
 
@@ -549,7 +549,7 @@ footer {
     border-radius: 8px;
 }
 
-/** Responsive **/
+/** Responsive (Tablet) **/
 
 @media (max-width:768px) {
 
@@ -573,7 +573,7 @@ footer {
         max-width: 648px;
     }
 
-    .links-item div {
+    .links-item a {
         margin: 10px 40px;
     }
 
@@ -630,5 +630,18 @@ footer {
 
     .stories-quote-3 {
         width: 688px;
+    }
+}
+
+/** Responsive (Phone) **/
+
+@media (max-width:375px) {
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    .nav-store-links-div {
+        display: none;
     }
 }

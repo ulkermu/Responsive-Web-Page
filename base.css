@@ -104,7 +104,7 @@ header {
 }
 
 .header-headline h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 .header-line {
@@ -137,7 +137,7 @@ header {
 .header-links-sep {
     display: flex;
     align-content: center;
-    padding-left: 42px;
+    padding-left: 3rem;
 }
 
 .header-links-sep a {
@@ -155,7 +155,6 @@ header {
 .header-shows {
     display: flex;
     justify-content: center;
-    padding: 5%;
 }
 
 .iphone-x {
@@ -199,25 +198,6 @@ header {
     width: 310px;
     margin-top: 0px;
     margin-left: -10px;
-}
-
-.iphone-x .iphone-line::after, .iphone-x .iphone-line::before {
-    content: "";
-    position: absolute;
-    border: solid rgba(68, 68, 68, 0.25);
-    border-width: 0 6px;
-    height: 5px;
-    left: 0;
-    width: 100%;
-    z-index: 9;
-}
-
-.iphone-x .iphone-line::after {
-    top: 68px;
-}
-
-.iphone-x .iphone-line::before {
-    bottom: 68px;
 }
 
 .iphone-x .iphone-header {
@@ -637,11 +617,140 @@ footer {
 
 @media (max-width:375px) {
 
+    body {
+        max-width: 375px;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
     .nav {
         justify-content: space-between;
+        max-width: 360px;
     }
 
     .nav-store-links-div {
         display: none;
+    }
+
+    .header {
+        max-width: 375px;
+        padding: 12px;
+        justify-content: center;
+    }
+
+    .header-news {
+        padding: 80px 10px;
+        max-width: 350px;
+    }
+
+    .header-shows {
+        padding: 30px 0;
+        max-width: 350px;
+    }
+
+    main {
+        max-width: 375px;
+    }
+
+    .links {
+        max-width: 375px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .links-line {
+        border-top: 1px solid #E5E7EB;
+        margin: auto;
+        justify-items: center;
+    }
+
+    .links-item {
+        max-width: 350px;
+        display: grid;
+        grid-template-columns: repeat(2, 125px);
+        grid-gap: 30px;
+        justify-content: center;
+    }
+
+    .features {
+        max-width: 375px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .features-header {
+        max-width: 375px;
+        padding: 0 10px;
+        margin-top: 50px;
+    }
+
+    .features-main {
+        grid-template-columns: repeat(1, 352px);
+    }
+
+    .stories {
+        max-width: 375px;
+    }
+
+    .stories-headline {
+        max-width: 375px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .stories-headline h2 {
+        font-size: 2rem;
+        padding-left: 15px;
+    }
+
+    .stories-headline span {
+        font-size: 1.2rem;
+        padding-left: 15px;
+    }
+
+    .stories-left-side {
+        margin: 0;
+    }
+
+    .stories-right-side {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .stories-quote-1 {
+        max-width: 350px;
+    }
+
+    .stories-quote-2 {
+        max-width: 350px;
+    }
+
+    .stories-quote-3 {
+        max-width: 350px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-right-bar,
+    .footer-left-bar {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .footer-right-bar {
+        margin-left: 30px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+    }
+
+    .footer-links div {
+        margin-bottom: 10px
     }
 }

@@ -55,6 +55,8 @@ header > * {
 
 .nav-links-logo a {
     padding-left: 1rem;
+    font-size: 18px;
+    font-weight: 900;
 }
 
 .nav-links div {
@@ -1033,7 +1035,7 @@ footer {
         bottom: 13.16%;
         background: rgba(242, 247, 255, 0.7);
         backdrop-filter: blur(100px);
-        opacity: 0.2;
+        opacity: 0.3;
     }
 
     .tc-p {
@@ -1043,7 +1045,7 @@ footer {
         top: 53.55%;
         bottom: 27.09%;
         background: #1DB5BE;
-        opacity: 0.2;
+        opacity: 0.3;
         -webkit-filter: blur(100px);
         -moz-filter: blur(100px);
         -o-filter: blur(100px);
@@ -1058,7 +1060,7 @@ footer {
         top: -4.27%;
         bottom: 57.36%;
         background: #7C3AED;
-        opacity: 0.2;
+        opacity: 0.3;
         -webkit-filter: blur(100px);
         -moz-filter: blur(100px);
         -o-filter: blur(100px);

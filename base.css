@@ -661,7 +661,7 @@ footer {
     }
 
     .header-news {
-        padding: 3rem 0;
+        padding: 4.5rem 0;
         max-width: 648px;
     }
 
@@ -857,8 +857,12 @@ footer {
     }
 
     .header-news {
-        padding: 80px 10px;
+        padding: 45px 10px;
         max-width: 350px;
+    }
+
+    .header-news h1 {
+        font-size: 2.4rem;
     }
 
     .header-shows {
@@ -1055,12 +1059,12 @@ footer {
 
     .pc-p {
         position: absolute;
-        left: 75.47%;
+        left: 90.47%;
         right: -3.73%;
         top: -4.27%;
         bottom: 57.36%;
         background: #7C3AED;
-        opacity: 0.3;
+        opacity: 0.6;
         -webkit-filter: blur(100px);
         -moz-filter: blur(100px);
         -o-filter: blur(100px);

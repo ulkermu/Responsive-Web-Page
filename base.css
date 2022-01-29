@@ -139,6 +139,7 @@ nav {
     font-size: 18px;
     padding-top: 16px;
     padding-bottom: 48px;
+    line-height: 1.6;
 }
 
 .header-links {
@@ -232,6 +233,7 @@ main {
 
 .features-header span {
     font-size: 18px;
+    line-height: 1.6;
 }
 
 .features-main {
@@ -324,6 +326,7 @@ main {
     margin: 16px;
     position: relative;
     bottom: 50px;
+    line-height: 1.6;
 }
 
 .note-2 {
@@ -332,6 +335,7 @@ main {
     margin: 16px;
     position: relative;
     top: 100px;
+    line-height: 1.6;
 }
 
 .note-3 {
@@ -341,6 +345,7 @@ main {
     margin: 16px;
     position: relative;
     top: 100px;
+    line-height: 1.6;
 }
 
 .stories-quote-svg {
@@ -489,6 +494,7 @@ footer {
 
     .features-content span {
         font-size: 16px;
+        line-height: 1.6;
     }
 
     .stories {
@@ -550,7 +556,7 @@ footer {
     .note-3 {
         grid-area: note-3;
         position: static;
-        height: 205px;
+        height: 235px;
     }
 }
 
@@ -701,7 +707,7 @@ footer {
     }
 
     .note-3 {
-        height: 220px;
+        height: 280px;
     }
 
     footer {
@@ -747,6 +753,10 @@ footer {
     
     .links {
         margin: 0;
+    }
+
+    .note-3 {
+        height: 280px;
     }
 }
 
@@ -797,6 +807,6 @@ footer {
     }
 
     .note-3 {
-        height: 250px;
+        height: 300px;
     }
 }

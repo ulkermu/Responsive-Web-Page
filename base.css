@@ -39,7 +39,7 @@ header {
         "nav"
         "header-content";
     padding: 0 120px;
-    background-image: url(./background-desktop.png);
+    background-image: url(./img/background-desktop.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -223,8 +223,9 @@ main {
     font-size: 18px;
     padding-top: 96px;
     padding-bottom: 20px;
-    max-width: 800px;
 }
+
+
 
 .features-header h2 {
     font-size: 48px;
@@ -233,11 +234,12 @@ main {
 
 .features-header span {
     font-size: 18px;
+    width: 800px;
 }
 
 .features-main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
+    grid-template-columns: repeat(3, minmax(384px, 1fr));
     text-align: center;
     justify-items: center;
 }
@@ -421,7 +423,7 @@ footer {
 
     header {
         padding: 0 48px;
-        background-image: url(./background-tablet.png);
+        background-image: url(./img/background-tablet.png);
     }
 
     .nav-link {
@@ -641,7 +643,7 @@ footer {
 
     header {
         padding: 16px;
-        background-image: url(./background-phone.png);
+        background-image: url(./img/background-phone.png);
     }
 
     .header {
@@ -731,6 +733,13 @@ footer {
     }
 }
 
+@media (max-width:425px) {
+    
+    .links {
+        margin: 0;
+    }
+}
+
 @media (max-width:375px) {
 
     header {
@@ -779,5 +788,9 @@ footer {
 
     .features-main {
         grid-template-columns: repeat(auto-fit, 375px);
+    }
+
+    .note-3 {
+        height: 250px;
     }
 }

@@ -225,8 +225,6 @@ main {
     padding-bottom: 20px;
 }
 
-
-
 .features-header h2 {
     font-size: 48px;
     padding-bottom: 8px;
@@ -234,7 +232,6 @@ main {
 
 .features-header span {
     font-size: 18px;
-    width: 800px;
 }
 
 .features-main {
@@ -435,6 +432,7 @@ footer {
         margin-left: 16px;
         position: relative;
         z-index: 5;
+        cursor: pointer;
     }
 
     .header {
@@ -627,7 +625,7 @@ footer {
     }
 
     .stories-headline {
-        margin-left: 48px;
+        margin-left: 40px;
         position: relative;
         max-width: 100%;
     }
@@ -650,6 +648,10 @@ footer {
         padding-top: 56px 0;
         grid-template-columns: repeat(1, minmax(350px, 1fr));
         overflow-x: hidden;
+    }
+
+    .header-headline h1 {
+        font-size: 34px;
     }
 
     .nav-store-links-div {
@@ -688,6 +690,14 @@ footer {
     .features-main {
         grid-template-columns: repeat(1, 375px);
         justify-content: center;
+    }
+    
+    .stories-header h2 {
+        font-size: 30px;
+    }
+
+    .stories-headline {
+        margin-left: 20px;
     }
 
     .note-3 {
@@ -750,10 +760,6 @@ footer {
         padding-top: 56px 0;
         grid-template-columns: repeat(1, minmax(350px, 1fr));
         overflow-x: hidden;
-    }
-
-    .header-headline h1 {
-        font-size: 34px;
     }
 
     .header-links a, .header-links button {

@@ -220,6 +220,8 @@ main {
     font-size: 18px;
     padding-top: 96px;
     padding-bottom: 20px;
+    max-width: 800px;
+    margin: auto;
 }
 
 .features-header h2 {

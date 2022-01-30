@@ -574,6 +574,7 @@ footer {
             "header-news"
             "header-shows";
         grid-template-columns: repeat(1, minmax(375px, 1fr));
+        padding: 50px 0;
     }
 
     .header-news {
@@ -653,7 +654,6 @@ footer {
     }
 
     .header {
-        padding-top: 56px 0;
         grid-template-columns: repeat(1, minmax(350px, 1fr));
         overflow-x: hidden;
     }
@@ -754,6 +754,10 @@ footer {
 
 @media (max-width:425px) {
 
+    .header {
+        padding: 25px 0;
+    }
+
     .header-news {
         max-width: 100%;
     }
@@ -774,7 +778,6 @@ footer {
     }
 
     .header {
-        padding-top: 56px 0;
         grid-template-columns: repeat(1, minmax(343px, 1fr));
         overflow-x: hidden;
     }

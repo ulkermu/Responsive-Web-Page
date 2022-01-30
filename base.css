@@ -62,10 +62,6 @@ nav {
     align-items: center;
 }
 
-.nav-links div {
-    margin: 0 10px;
-}
-
 .nav-links-logo {
     display: flex;
     align-items: center;
@@ -259,6 +255,11 @@ main {
 
 .features-content {
     max-width: 335px;
+}
+
+.features-content span {
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 .features-main div>* {
@@ -457,7 +458,7 @@ footer {
     }
 
     .header-shows {
-        margin-top: 80px;
+        padding-top: 80px;
         justify-self: center;
     }
 
@@ -490,11 +491,6 @@ footer {
 
     .features-content h3 {
         font-size: 24px;
-    }
-
-    .features-content span {
-        font-size: 16px;
-        line-height: 1.6;
     }
 
     .stories {
@@ -698,7 +694,7 @@ footer {
         grid-template-columns: repeat(1, 375px);
         justify-content: center;
     }
-    
+
     .stories-header h2 {
         font-size: 30px;
     }
@@ -751,7 +747,11 @@ footer {
 }
 
 @media (max-width:425px) {
-    
+
+    .header-news {
+        max-width: 100%;
+    }
+
     .links {
         margin: 0;
     }
@@ -764,12 +764,12 @@ footer {
 @media (max-width:375px) {
 
     header {
-        padding: 16px;
+        padding: 20px;
     }
 
     .header {
         padding-top: 56px 0;
-        grid-template-columns: repeat(1, minmax(350px, 1fr));
+        grid-template-columns: repeat(1, minmax(343px, 1fr));
         overflow-x: hidden;
     }
 

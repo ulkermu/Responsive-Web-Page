@@ -662,6 +662,10 @@ footer {
         font-size: 34px;
     }
 
+    nav {
+        padding-top: 0;
+    }
+
     .nav-store-links-div {
         display: none;
     }

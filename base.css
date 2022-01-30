@@ -28,6 +28,10 @@ body {
         "main"
         "footer";
     background-color: white;
+    background-image: url(./img/background-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100% 866px;
+    position: relative;
 }
 
 /* -------------------------------- Header -------------------------------- */
@@ -39,10 +43,6 @@ header {
         "nav"
         "header-content";
     padding: 0 120px;
-    background-image: url(./img/background-desktop.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    position: relative;
 }
 
 header>* {
@@ -155,8 +155,14 @@ nav {
     border: none;
     outline: none;
     font-size: 16px;
+    font-weight: 600;
     border-radius: 8px;
     cursor: pointer;
+}
+
+.header-links button:hover {
+    transition: all 0.3s ease-out;
+    opacity: 0.8;
 }
 
 .header-links-sep {
@@ -430,13 +436,13 @@ footer {
 
 @media (max-width:1200px) {
 
-    header {
-        padding: 0 48px;
+    body {
         background-image: url(./img/background-tablet.png);
+        background-size: 100% 1100px;
     }
 
-    .nav-link {
-        display: none;
+    header {
+        padding: 0 48px;
     }
 
     .nav-burger {
@@ -565,7 +571,7 @@ footer {
 @media (max-width:768px) {
 
     header {
-        padding: 0 24px;
+        padding: 0 40px;
     }
 
     .header {
@@ -577,8 +583,12 @@ footer {
         padding: 50px 0;
     }
 
+    .nav-link {
+        display: none;
+    }
+
     .header-news {
-        max-width: 90%;
+        max-width: 100%;
     }
 
     .header-shows {
@@ -648,9 +658,12 @@ footer {
 
 @media (max-width:700px) {
 
+    body {
+        background-image: url(./img/background-phone.png);
+    }
+
     header {
         padding: 16px;
-        background-image: url(./img/background-phone.png);
     }
 
     .header {
